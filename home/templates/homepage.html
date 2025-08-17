@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <title>
         <head>
-            <boady>
-                <h1>Welcome to {{restaurant_name}}</h1>
-</title>
+            
+                <title>Welcome to {{restaurant_name}}</title>
+
 </head>
+<body>
+    <header styke="background-color: black; color:white; padding: 0; background-color:white;">
+        <h1 style="margin: 0;">{{restaurant_name}}</h1>
+        <nav style="margin-top: 10px";>
+            <a href="{% url 'homepage' %}" style="color:yellow; text-decoration: none; margin: 0 15px;">Home</a>
+            <a href="{% url 'about' %'}" style="color:yellow; text-decoration: none; margin: 0 15px;">about</a>
+        </nav>
+    </header>
+  <main style="padding:40pc; text-align:center;">
+    <h2 style="color:black;">Welcome to {{ restaurant_name}}</h2>
+    <p style="font-size: 18p-x; color:grey; max-length:600px; margin: auto;">
+        experience the taste of tradition and quality.
+    </p>
+  </main>
+<footer>
+</footer>
 </body>
+</html>  

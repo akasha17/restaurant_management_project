@@ -8,3 +8,7 @@ def homepage(request):
         'restaurant_name': settings.RESTAURANT_NAME
     }
     return render(request, 'homepage.html',context)
+
+
+def about_us(request):
+    return render(request, 'about.html')
